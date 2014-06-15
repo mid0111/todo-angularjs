@@ -11,8 +11,15 @@
 angular
   .module('todoApp', [
     'ngResource',
-    'ngRoute'
+    'ngRoute',
+    'firebase'
   ])
+  .value('fbURL', 'https://angularjs-firebase.firebaseio.com/')
+
+  .factory('Todos', function($firebase, fbURL) {
+    return $firebase(new Firebase(fbURL + 'todos/'));
+  })
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
