@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name todoAgularRoutesApp
+ * @name todoApp
  * @description
- * # todoAgularRoutesApp
+ * # todoApp
  *
  * Main module of the application.
  */
 angular
-  .module('todoAgularRoutesApp', [
+  .module('todoApp', [
     'ngResource',
     'ngRoute'
   ])
