@@ -6,7 +6,7 @@
 <ul class="list-unstyled"> 
   <li ng-repeat="todo in todos | orderByPriority">
     <label class="checkbox">
-      <input type="checkbox" ng-model="todo.done" ng-change="done(todo.$id)">
+      <input type="checkbox" ng-model="todo.done">
       <span class="done-{{todo.done}}">{{todo.text}}</span>
     </label>
   </li>
